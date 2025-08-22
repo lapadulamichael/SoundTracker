@@ -1,0 +1,15 @@
+piece( p1, vis( 2 ) ).
+piece( p2, dents( 10 ) ).
+piece( p3, dents( 20 ) ).
+piece( p4, dents( 10 ) ).
+piece( p5, dents( 15 ) ).
+
+lien( direct, p1, p2 ).
+lien( chaine, p2, p3 ).
+lien( essieu, p3, p4 ).
+lien( direct, p4, p5 ).
+
+% exemple de requete :
+% tourner( p1, 4.0, 12.0, p5, RV, RC ).
+% RV = -0.1344,
+% RC = -90.72000000000001
